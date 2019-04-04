@@ -28,19 +28,17 @@ namespace NumbersManipulation_Web.Controllers
             return View();
         }
 
-        //int numberFirst, int numberSecond, string algorithm
-        public ActionResult GCD()
+        [HttpPost]
+        public ActionResult GCD(int numberFirst, int numberSecond, string algorithm)
         {
-            var a = ViewBag.n1;
-            //if (algorithm == "Eurledian")
-            //{
-            //     return GCDAlgorithms.CalculateByEuclidean(numberFirst, numberSecond);
-            //}
-
-            //else
-            //{
-            //    return GCDAlgorithms.CalculateByStein(numberFirst, numberSecond);
-            //}
+            if (algorithm == "Eukledian")
+            {
+               ViewBag.Result = GCDAlgorithms.CalculateByEuclidean(numberFirst, numberSecond);
+            }
+            else
+            {
+               ViewBag.Result = GCDAlgorithms.CalculateByStein(numberFirst, numberSecond);
+            }
 
             return View();
 
