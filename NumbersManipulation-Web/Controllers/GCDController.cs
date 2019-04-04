@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using NumbersManipulations;
 
 namespace NumbersManipulation_Web.Controllers
 {
@@ -25,6 +26,24 @@ namespace NumbersManipulation_Web.Controllers
             ViewBag.Message = "Your contact page.";
 
             return View();
+        }
+
+        //int numberFirst, int numberSecond, string algorithm
+        public ActionResult GCD()
+        {
+            var a = ViewBag.n1;
+            //if (algorithm == "Eurledian")
+            //{
+            //     return GCDAlgorithms.CalculateByEuclidean(numberFirst, numberSecond);
+            //}
+
+            //else
+            //{
+            //    return GCDAlgorithms.CalculateByStein(numberFirst, numberSecond);
+            //}
+
+            return View();
+
         }
     }
 }

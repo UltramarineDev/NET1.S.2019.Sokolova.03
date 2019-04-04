@@ -1,17 +1,13 @@
 ﻿@{
-    Layout = null;
+    ViewBag.Title = "GCD";
 }
 
-<!DOCTYPE html>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title></title>
-</head>
-<body>
-    <div>
-    
-    </div>
-</body>
-</html>
+<h4>Finder GCD</h4>
+@*<h4>@ViewBag.ResultAfterCalculation</h4>*@
+@(ViewBag.n1)
+@(ViewBag.n2)
+
+@*<h4><%= Html.Action("GCD", new {numberFirst = @(ViewBag.n1), numberSecond = @(ViewBag.n2), algorithm = "Eurledian"})%></h4>*@
+
+<a href="/GCD/Index" class="bottom">back</a>
