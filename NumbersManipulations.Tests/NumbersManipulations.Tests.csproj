@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GCDNew3DecoratorTests.cs" />
     <Compile Include="GCDNewTests.cs" />
     <Compile Include="GCDTests.cs" />
     <Compile Include="NewtonImplementationTests.cs" />
@@ -57,6 +58,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AssemblyForTask1Day8\AssemblyForTask1Day8.csproj">
+      <Project>{3b703b27-e650-4d28-95f1-c822593431d3}</Project>
+      <Name>AssemblyForTask1Day8</Name>
+    </ProjectReference>
     <ProjectReference Include="..\NumbersManipulations\NumbersManipulations.csproj">
       <Project>{e5baf433-0506-4c38-acba-6f1fc9139a7b}</Project>
       <Name>NumbersManipulations</Name>
