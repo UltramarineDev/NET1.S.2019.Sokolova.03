@@ -69,6 +69,31 @@ namespace NumbersManipulations
         }
 
         /// <summary>
+        /// Method calculates the greatest common divisor using Euclidean algorithm for three integers.
+        /// </summary>
+        /// <param name="first">first integer</param>
+        /// <param name="second">second integer</param>
+        /// <param name="third">third integer</param>
+        /// <returns>GCD of three integers</returns>
+        public static int EuclideanCalculation(int first, int second, int third)
+        {
+            return EuclideanCalculation(first, EuclideanCalculation(second, third));
+        }
+
+        /// <summary>
+        /// Method calculates the greatest common divisor using Euclidean algorithm for four integers.
+        /// </summary>
+        /// <param name="first">first integer</param>
+        /// <param name="second">second integer</param>
+        /// <param name="third">third integer</param>
+        /// <param name="fourth">fourth integer</param>
+        /// <returns>GCD of fourth integers</returns>
+        public static int EuclideanCalculation(int first, int second, int third, int fourth)
+        {
+            return EuclideanCalculation(first, EuclideanCalculation(second, third, fourth));
+        }
+
+        /// <summary>
         /// Method calculates the greatest common divisor using Euclidean algorithm for multiple arguments.
         /// </summary>
         /// <param name="numbers">array of numbers</param>
@@ -82,9 +107,9 @@ namespace NumbersManipulations
             }
 
             int gcd = numbers[0];
-            for (int i = 0; i < numbers.Length - 1; i++)
+            for(int i = 1; i < numbers.Length; i++)
             {
-                gcd = EuclideanCalculation(numbers[i], numbers[i + 1]);
+                gcd = EuclideanCalculation(gcd, numbers[i]);
             }
 
             return gcd;
@@ -186,6 +211,31 @@ namespace NumbersManipulations
         }
 
         /// <summary>
+        /// Method calculates the greatest common divisor using Binary GCD algorithm for three integers.
+        /// </summary>
+        /// <param name="first">first integer</param>
+        /// <param name="second">second integer</param>
+        /// <param name="third">third integer</param>
+        /// <returns>GCD of three integers</returns>
+        public static int BinaryGCDCalculation(int first, int second, int third)
+        {
+            return BinaryGCDCalculation(first, BinaryGCDCalculation(second, third));
+        }
+
+        /// <summary>
+        /// Method calculates the greatest common divisor using Binary GCD algorithm for fourth integers.
+        /// </summary>
+        /// <param name="first">first integer</param>
+        /// <param name="second">second integer</param>
+        /// <param name="third">third integer</param>
+        /// <param name="fourth">fourth integer</param>
+        /// <returns>GCD of four integers</returns>
+        public static int BinaryGCDCalculation(int first, int second, int third, int fourth)
+        {
+            return BinaryGCDCalculation(first, BinaryGCDCalculation(second, third, fourth));
+        }
+
+        /// <summary>
         /// Method calculates the greatest common divisor using Binary GCD algorithm for multiple arguments.
         /// </summary>
         /// <param name="numbers">array of numbers</param>
@@ -199,9 +249,9 @@ namespace NumbersManipulations
             }
 
             int gcd = numbers[0];
-            for (int i = 0; i < numbers.Length - 1; i++)
+            for (int i = 1; i < numbers.Length; i++)
             {
-                gcd = BinaryGCDCalculation(numbers[i], numbers[i + 1]);
+                gcd = BinaryGCDCalculation(gcd, numbers[i]);
             }
 
             return gcd;
