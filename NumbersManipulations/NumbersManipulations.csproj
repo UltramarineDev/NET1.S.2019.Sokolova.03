@@ -45,6 +45,7 @@
     <Compile Include="GCDNew3.cs" />
     <Compile Include="NewtonImplementation.cs" />
     <Compile Include="NumberFinder.cs" />
+    <Compile Include="NumberFinderNew.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

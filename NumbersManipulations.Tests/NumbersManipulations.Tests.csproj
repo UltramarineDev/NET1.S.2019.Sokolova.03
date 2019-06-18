@@ -51,6 +51,7 @@
     <Compile Include="GCDNewTests.cs" />
     <Compile Include="GCDTests.cs" />
     <Compile Include="NewtonImplementationTests.cs" />
+    <Compile Include="NumerFinderNewTests.cs" />
     <Compile Include="NumerFinderTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
