@@ -1,7 +1,7 @@
 ## Задачи
 :heavy_check_mark: 1. Реализовать алгоритм FindNthRoot, позволяющий вычислять корень n-ой степени ( n ∈ N ) из вещественного числа а методом Ньютона с заданной точностью. Разработать модульные тесты.<br/>
-go to [link]()<br/><br/>
+go to [NewtonImplementation](https://github.com/UltramarineDev/NET1.S.2019.Sokolova.03/blob/master/NumbersManipulations/NewtonImplementation.cs) class<br/><br/>
 :heavy_check_mark: 2. Реализовать метод NextBiggerThan, который принимает положительное целое число и возвращает ближайшее наибольшее целое, состоящее из цифр исходного числа, и null, если такого числа не существует. (Padawans Task #6). Разработать модульные тесты.<br/> 
-go to [NumberFinderNew class](https://github.com/UltramarineDev/NET1.S.2019.Sokolova.03/blob/master/NumbersManipulations/NumberFinderNew.cs)<br/><br/>
+go to [NumberFinderNew](https://github.com/UltramarineDev/NET1.S.2019.Sokolova.03/blob/master/NumbersManipulations/NumberFinderNew.cs) class<br/><br/>
 :heavy_check_mark: 3. Разработать класс, позволяющий выполнять вычисления НОД по алгоритму Евклида для двух, трех и т.д. целых чисел. Методы класса помимо вычисления НОД должны предоставлять дополнительную возможность определения значение времени, необходимого для выполнения расчета. Добавить к разработанному классу методы, реализующие алгоритм Стейна (бинарный алгоритм Евклида) для расчета НОД двух, трех и т.д. целых чисел, а также методы, предоставляющие дополнительную возможность определения значения времени, необходимого для выполнения расчета. Рассмотреть различные возможности реализации методов, возвращающих время вычисления НОД. Разработать модульные тесты.<br/>
-go to [link]()
+go to [GCD](https://github.com/UltramarineDev/NET1.S.2019.Sokolova.03/blob/master/NumbersManipulations/GCD.cs) class
